@@ -1,24 +1,432 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aca-FY-Cfj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Login View Controller-->
+        <scene sceneID="kob-gw-lIJ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="2tx-oX-lzc" customClass="LoginViewController" customModule="ExamenPagaTodo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NSn-1A-Ks0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="reQ-xO-44a">
+                                <rect key="frame" x="16" y="180.5" width="343" height="346"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xg-BD-hsd" customClass="CapitalButon" customModule="ExamenPagaTodo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Nnw-mk-8NH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Escanea código QR">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeColor">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeFont">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="scanQR:" destination="2tx-oX-lzc" eventType="touchUpInside" id="GQ4-fi-5WL"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="o ingresa tu correo y contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFc-6k-2rd" customClass="CapitalLabel" customModule="ExamenPagaTodo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56" width="343" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="JJi-3C-tNL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeFont">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aQZ-3X-0Ej">
+                                        <rect key="frame" x="0.0" y="97" width="343" height="40"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconoUsuario" translatesAutoresizingMaskIntoConstraints="NO" id="TwS-BP-aWw">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Hg1-o9-kiI"/>
+                                                    <constraint firstAttribute="width" constant="40" id="ueB-QJ-U8e"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I2b-uV-tsP" customClass="CapitalTextField" customModule="ExamenPagaTodo" customModuleProvider="target">
+                                                <rect key="frame" x="48" y="0.0" width="295" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="k7V-Ws-sjp"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="typeBorderColor">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="TwS-BP-aWw" firstAttribute="leading" secondItem="aQZ-3X-0Ej" secondAttribute="leading" id="Tw1-C2-Hwa"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Rnm-DC-v6n">
+                                        <rect key="frame" x="0.0" y="153" width="343" height="40"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconoUsuario" translatesAutoresizingMaskIntoConstraints="NO" id="XoX-0w-0D6">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Boj-nn-5Kh"/>
+                                                    <constraint firstAttribute="width" constant="40" id="NKO-03-5ph"/>
+                                                </constraints>
+                                            </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="roK-1J-Icg" customClass="CapitalTextField" customModule="ExamenPagaTodo" customModuleProvider="target">
+                                                <rect key="frame" x="48" y="0.0" width="295" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ac9-cM-gak"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="typeBorderColor">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfn-PQ-ZLp" customClass="CapitalButon" customModule="ExamenPagaTodo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="209" width="343" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="EqI-nl-tt8"/>
+                                        </constraints>
+                                        <state key="normal" title="Ingresar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeColor">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeFont">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="ingresarApp:" destination="2tx-oX-lzc" eventType="touchUpInside" id="HyE-s6-XHS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOY-kn-eOs" customClass="CapitalButon" customModule="ExamenPagaTodo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="265" width="343" height="40"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qbI-Ad-QAG"/>
+                                        </constraints>
+                                        <state key="normal" title="Registrate">
+                                            <color key="titleColor" red="1" green="0.078431372550000003" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeBorderColor">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeBorder">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeFont">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Has olivdado tu contraseña?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNb-Cj-qir" customClass="CapitalLabel" customModule="ExamenPagaTodo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="321" width="343" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="cjj-ow-jay"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.9989970326423645" green="0.079905144870281219" blue="0.60905593633651733" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="typeFont">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderLine" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9xg-BD-hsd" firstAttribute="leading" secondItem="reQ-xO-44a" secondAttribute="leading" id="2OY-9j-Vdb"/>
+                                    <constraint firstItem="aQZ-3X-0Ej" firstAttribute="leading" secondItem="reQ-xO-44a" secondAttribute="leading" id="6NZ-hM-cLV"/>
+                                    <constraint firstItem="ZNb-Cj-qir" firstAttribute="leading" secondItem="reQ-xO-44a" secondAttribute="leading" id="CLp-MA-ABv"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZNb-Cj-qir" secondAttribute="trailing" id="JFD-vQ-8GX"/>
+                                    <constraint firstItem="Rfn-PQ-ZLp" firstAttribute="leading" secondItem="reQ-xO-44a" secondAttribute="leading" id="Jkg-hn-zak"/>
+                                    <constraint firstAttribute="trailing" secondItem="aQZ-3X-0Ej" secondAttribute="trailing" id="QH6-2M-A1N"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rfn-PQ-ZLp" secondAttribute="trailing" id="Uo0-nI-yFO"/>
+                                    <constraint firstItem="HOY-kn-eOs" firstAttribute="leading" secondItem="reQ-xO-44a" secondAttribute="leading" id="ZNI-80-hSf"/>
+                                    <constraint firstItem="Rnm-DC-v6n" firstAttribute="leading" secondItem="reQ-xO-44a" secondAttribute="leading" id="bPM-Ud-bH8"/>
+                                    <constraint firstItem="IFc-6k-2rd" firstAttribute="leading" secondItem="reQ-xO-44a" secondAttribute="leading" id="bcc-vO-oaa"/>
+                                    <constraint firstAttribute="trailing" secondItem="IFc-6k-2rd" secondAttribute="trailing" id="eYK-da-opL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rnm-DC-v6n" secondAttribute="trailing" id="sYs-d7-mb0"/>
+                                    <constraint firstAttribute="trailing" secondItem="9xg-BD-hsd" secondAttribute="trailing" id="tVs-hV-Tjl"/>
+                                    <constraint firstAttribute="trailing" secondItem="HOY-kn-eOs" secondAttribute="trailing" id="wVx-ba-RYG"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capital_Social_ logo" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-db-rvv">
+                                <rect key="frame" x="87.5" y="120.5" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="eYe-mM-cgC"/>
+                                    <constraint firstAttribute="height" constant="40" id="h2e-pu-aAC"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="reQ-xO-44a" firstAttribute="centerY" secondItem="NSn-1A-Ks0" secondAttribute="centerY" constant="20" id="U7e-yh-VI0"/>
+                            <constraint firstItem="reQ-xO-44a" firstAttribute="leading" secondItem="Rwd-Db-P6w" secondAttribute="leading" constant="16" id="ZAv-Pv-Ucd"/>
+                            <constraint firstItem="Bga-db-rvv" firstAttribute="centerX" secondItem="NSn-1A-Ks0" secondAttribute="centerX" id="lYR-U5-79Z"/>
+                            <constraint firstItem="reQ-xO-44a" firstAttribute="centerX" secondItem="NSn-1A-Ks0" secondAttribute="centerX" id="otE-Is-cOV"/>
+                            <constraint firstItem="Rwd-Db-P6w" firstAttribute="trailing" secondItem="reQ-xO-44a" secondAttribute="trailing" constant="16" id="xlP-0Z-gF0"/>
+                            <constraint firstItem="reQ-xO-44a" firstAttribute="top" secondItem="Bga-db-rvv" secondAttribute="bottom" constant="20" id="yrL-KW-uzU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rwd-Db-P6w"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OFs-fF-oBK"/>
+                    <connections>
+                        <outlet property="txtPassword" destination="roK-1J-Icg" id="vYE-jI-ekW"/>
+                        <outlet property="txtUser" destination="I2b-uV-tsP" id="UEe-Av-5KV"/>
+                        <segue destination="lh3-jt-Bir" kind="show" identifier="goToColection" id="f4K-6r-vah"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAA-aD-wck" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1016.8" y="32.833583208395808"/>
+        </scene>
+        <!--Capital Social-->
+        <scene sceneID="TgY-nc-Jtu">
+            <objects>
+                <viewController title="Capital Social" id="lh3-jt-Bir" customClass="CollectionViewController" customModule="ExamenPagaTodo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kIP-9N-Upa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XEi-Qt-oXR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q10-0f-76n">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="2" maxX="0.0" maxY="2"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="zBt-gd-P0h" customClass="CollectionViewCell" customModule="ExamenPagaTodo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="2" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="786-U4-Uxi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="el7-It-XGb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="112.5"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYa-0q-7UC">
+                                                            <rect key="frame" x="0.0" y="112.5" width="150" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="Q3o-Sd-6Bw"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="FYa-0q-7UC" firstAttribute="top" secondItem="el7-It-XGb" secondAttribute="bottom" id="GEu-0o-GhR"/>
+                                                        <constraint firstItem="FYa-0q-7UC" firstAttribute="leading" secondItem="786-U4-Uxi" secondAttribute="leading" id="LTm-ai-gHC"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FYa-0q-7UC" secondAttribute="trailing" id="gWB-OL-qz1"/>
+                                                        <constraint firstItem="el7-It-XGb" firstAttribute="leading" secondItem="786-U4-Uxi" secondAttribute="leading" id="h78-AW-KJt"/>
+                                                        <constraint firstItem="el7-It-XGb" firstAttribute="height" secondItem="786-U4-Uxi" secondAttribute="height" multiplier="0.75" id="jnG-Gf-MQK"/>
+                                                        <constraint firstItem="el7-It-XGb" firstAttribute="top" secondItem="786-U4-Uxi" secondAttribute="top" id="oc3-fq-Kth"/>
+                                                        <constraint firstAttribute="trailing" secondItem="el7-It-XGb" secondAttribute="trailing" id="ph9-4F-vLo"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="786-U4-Uxi" firstAttribute="leading" secondItem="zBt-gd-P0h" secondAttribute="leading" id="mPk-yk-ncr"/>
+                                            <constraint firstAttribute="trailing" secondItem="786-U4-Uxi" secondAttribute="trailing" id="peV-Iz-bSv"/>
+                                            <constraint firstItem="786-U4-Uxi" firstAttribute="top" secondItem="zBt-gd-P0h" secondAttribute="top" id="qnl-u8-eFC"/>
+                                            <constraint firstAttribute="bottom" secondItem="786-U4-Uxi" secondAttribute="bottom" id="zhG-li-cN6"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imgPromo" destination="el7-It-XGb" id="PXR-oG-Omb"/>
+                                            <outlet property="lblTitlePromo" destination="FYa-0q-7UC" id="MWg-3u-u4J"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lh3-jt-Bir" id="bqE-3Y-Fe6"/>
+                                    <outlet property="delegate" destination="lh3-jt-Bir" id="Vio-Lq-17v"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="XEi-Qt-oXR" secondAttribute="bottom" id="CHj-to-PvK"/>
+                            <constraint firstItem="XEi-Qt-oXR" firstAttribute="top" secondItem="Q7n-AM-aVm" secondAttribute="top" id="IVO-Wq-66h"/>
+                            <constraint firstItem="XEi-Qt-oXR" firstAttribute="leading" secondItem="Q7n-AM-aVm" secondAttribute="leading" id="mwO-3G-VbI"/>
+                            <constraint firstItem="Q7n-AM-aVm" firstAttribute="trailing" secondItem="XEi-Qt-oXR" secondAttribute="trailing" id="x6I-2g-8l2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q7n-AM-aVm"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionViewPromo" destination="XEi-Qt-oXR" id="heo-Rt-Y58"/>
+                        <segue destination="Oir-po-HIS" kind="show" identifier="goToMap" id="c7p-cM-EAM"/>
+                        <segue destination="ekQ-MQ-Xzx" kind="show" identifier="goToDetail" id="k5I-je-heT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nP-qN-qU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1840.8" y="32.833583208395808"/>
+        </scene>
+        <!--Capital Social-->
+        <scene sceneID="qAX-uR-le6">
+            <objects>
+                <viewController title="Capital Social" id="Oir-po-HIS" customClass="MapaViewController" customModule="ExamenPagaTodo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mkR-w9-zJH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="TMG-Qw-0E2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TMG-Qw-0E2" firstAttribute="trailing" secondItem="gCf-qz-TtY" secondAttribute="trailing" id="DG5-U1-DJI"/>
+                            <constraint firstItem="TMG-Qw-0E2" firstAttribute="leading" secondItem="gCf-qz-TtY" secondAttribute="leading" id="Mh1-um-wuw"/>
+                            <constraint firstItem="TMG-Qw-0E2" firstAttribute="bottom" secondItem="mkR-w9-zJH" secondAttribute="bottom" id="aMI-W3-I2I"/>
+                            <constraint firstItem="TMG-Qw-0E2" firstAttribute="top" secondItem="gCf-qz-TtY" secondAttribute="top" id="ooP-es-tAB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gCf-qz-TtY"/>
+                    </view>
+                    <connections>
+                        <outlet property="map" destination="TMG-Qw-0E2" id="1pd-jv-oDh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZFz-sP-Xeq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2664.8000000000002" y="-380.05997001499253"/>
+        </scene>
+        <!--Capital Social-->
+        <scene sceneID="hTi-tm-BOc">
+            <objects>
+                <viewController title="Capital Social" id="ekQ-MQ-Xzx" customClass="DetailViewController" customModule="ExamenPagaTodo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zty-OJ-IdJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UKb-da-vJK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="lXa-yv-M9q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYw-Xd-l9z">
+                                <rect key="frame" x="0.0" y="229" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ct6-qE-Yub"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="dG2-zl-JS1">
+                                <rect key="frame" x="0.0" y="259" width="375" height="408"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  At accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat. 
+Consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nYw-Xd-l9z" firstAttribute="top" secondItem="UKb-da-vJK" secondAttribute="bottom" constant="15" id="GS8-ql-oRO"/>
+                            <constraint firstItem="UKb-da-vJK" firstAttribute="leading" secondItem="KNg-22-Mls" secondAttribute="leading" id="QLD-Kr-4CK"/>
+                            <constraint firstItem="dG2-zl-JS1" firstAttribute="leading" secondItem="KNg-22-Mls" secondAttribute="leading" id="SWg-Ue-VD3"/>
+                            <constraint firstItem="KNg-22-Mls" firstAttribute="trailing" secondItem="UKb-da-vJK" secondAttribute="trailing" id="Z2i-LY-0ML"/>
+                            <constraint firstAttribute="bottom" secondItem="dG2-zl-JS1" secondAttribute="bottom" id="dtO-cP-YlH"/>
+                            <constraint firstItem="nYw-Xd-l9z" firstAttribute="leading" secondItem="KNg-22-Mls" secondAttribute="leading" id="ego-zo-s8K"/>
+                            <constraint firstItem="dG2-zl-JS1" firstAttribute="trailing" secondItem="KNg-22-Mls" secondAttribute="trailing" id="fFN-EB-xQJ"/>
+                            <constraint firstItem="UKb-da-vJK" firstAttribute="top" secondItem="KNg-22-Mls" secondAttribute="top" id="heM-5l-amX"/>
+                            <constraint firstItem="KNg-22-Mls" firstAttribute="trailing" secondItem="nYw-Xd-l9z" secondAttribute="trailing" id="tsO-V9-bQA"/>
+                            <constraint firstItem="dG2-zl-JS1" firstAttribute="top" secondItem="nYw-Xd-l9z" secondAttribute="bottom" id="ziK-Tb-saa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KNg-22-Mls"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgPromo" destination="UKb-da-vJK" id="tv9-ZY-DoO"/>
+                        <outlet property="lblTitle" destination="nYw-Xd-l9z" id="7ei-0I-blY"/>
+                        <outlet property="textViewDes" destination="dG2-zl-JS1" id="1ua-0s-y9O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHg-As-chT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.8000000000002" y="286.50674662668666"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="inT-QX-a6O">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aca-FY-Cfj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LX4-6Z-sqG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.99899703259999995" green="0.07990514487" blue="0.60905593629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2tx-oX-lzc" kind="relationship" relationship="rootViewController" id="Ips-y6-a8u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdQ-cj-wqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="33"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Capital_Social_ logo" width="297" height="50"/>
+        <image name="IconoUsuario" width="22" height="22"/>
+    </resources>
 </document>

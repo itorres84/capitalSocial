@@ -7,21 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD30EAF9211AD11B97D2DD60 /* Pods_ExamenPagaTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDFFA414E0ABD63F5452B3CF /* Pods_ExamenPagaTodo.framework */; };
 		E721160A1F9AC81400F3D645 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72116091F9AC81400F3D645 /* AppDelegate.swift */; };
-		E721160C1F9AC81400F3D645 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721160B1F9AC81400F3D645 /* ViewController.swift */; };
+		E721160C1F9AC81400F3D645 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721160B1F9AC81400F3D645 /* LoginViewController.swift */; };
 		E721160F1F9AC81400F3D645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E721160D1F9AC81400F3D645 /* Main.storyboard */; };
 		E72116111F9AC81400F3D645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72116101F9AC81400F3D645 /* Assets.xcassets */; };
 		E72116141F9AC81400F3D645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72116121F9AC81400F3D645 /* LaunchScreen.storyboard */; };
+		E72116261F9ACC6C00F3D645 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72116251F9ACC6C00F3D645 /* Const.swift */; };
+		E72116281F9ACD2C00F3D645 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E72116151F9AC81400F3D645 /* Info.plist */; };
+		E72116291F9ACD3200F3D645 /* CapitalButon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721161D1F9AC84E00F3D645 /* CapitalButon.swift */; };
+		E721162A1F9ACD3600F3D645 /* CapitalLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721161C1F9AC84E00F3D645 /* CapitalLabel.swift */; };
+		E721162B1F9ACD3900F3D645 /* CapitalTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721161E1F9AC84E00F3D645 /* CapitalTextField.swift */; };
+		E721162C1F9ACD6800F3D645 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E72116231F9ACB8900F3D645 /* Roboto-Regular.ttf */; };
+		E721162D1F9ACD6B00F3D645 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E72116221F9ACB8900F3D645 /* Roboto-Medium.ttf */; };
+		E721162E1F9ACD6E00F3D645 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E72116211F9ACB8900F3D645 /* Roboto-Light.ttf */; };
+		E721162F1F9ACD7100F3D645 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E72116201F9ACB8900F3D645 /* Roboto-Bold.ttf */; };
+		E7545E6A1F9EA6C400BAF26D /* CapitalRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7545E691F9EA6C400BAF26D /* CapitalRequestManager.swift */; };
+		E7545E6C1F9EAC1200BAF26D /* CHSesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7545E6B1F9EAC1200BAF26D /* CHSesion.swift */; };
+		E7545E6F1F9EBF4200BAF26D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7545E6E1F9EBF4200BAF26D /* HeaderView.xib */; };
+		E7545E711F9EC26B00BAF26D /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7545E701F9EC26B00BAF26D /* CollectionViewController.swift */; };
+		E7545E741F9ECBE500BAF26D /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7545E731F9ECBE500BAF26D /* MapaViewController.swift */; };
+		E7545E761F9ECC4700BAF26D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7545E751F9ECC4700BAF26D /* DetailViewController.swift */; };
+		E7545E781F9ECFE400BAF26D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7545E771F9ECFE400BAF26D /* CollectionViewCell.swift */; };
+		E7545E7A1F9ED2C900BAF26D /* Promocion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7545E791F9ED2C900BAF26D /* Promocion.swift */; };
+		E7545E7C1F9EED3700BAF26D /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7545E7B1F9EED3700BAF26D /* Artwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2F92986BECE87AAD18DA9BB /* Pods-ExamenPagaTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenPagaTodo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenPagaTodo/Pods-ExamenPagaTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		CC4F9BFF89F856649DB3EE7D /* Pods-ExamenPagaTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExamenPagaTodo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExamenPagaTodo/Pods-ExamenPagaTodo.release.xcconfig"; sourceTree = "<group>"; };
+		DDFFA414E0ABD63F5452B3CF /* Pods_ExamenPagaTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExamenPagaTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72116061F9AC81400F3D645 /* ExamenPagaTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenPagaTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72116091F9AC81400F3D645 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E721160B1F9AC81400F3D645 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E721160B1F9AC81400F3D645 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E721160E1F9AC81400F3D645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E72116101F9AC81400F3D645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E72116131F9AC81400F3D645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72116151F9AC81400F3D645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E721161C1F9AC84E00F3D645 /* CapitalLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalLabel.swift; sourceTree = "<group>"; };
+		E721161D1F9AC84E00F3D645 /* CapitalButon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalButon.swift; sourceTree = "<group>"; };
+		E721161E1F9AC84E00F3D645 /* CapitalTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalTextField.swift; sourceTree = "<group>"; };
+		E72116201F9ACB8900F3D645 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		E72116211F9ACB8900F3D645 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		E72116221F9ACB8900F3D645 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		E72116231F9ACB8900F3D645 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		E72116251F9ACC6C00F3D645 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		E7545E691F9EA6C400BAF26D /* CapitalRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalRequestManager.swift; sourceTree = "<group>"; };
+		E7545E6B1F9EAC1200BAF26D /* CHSesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHSesion.swift; sourceTree = "<group>"; };
+		E7545E6E1F9EBF4200BAF26D /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		E7545E701F9EC26B00BAF26D /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		E7545E731F9ECBE500BAF26D /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
+		E7545E751F9ECC4700BAF26D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E7545E771F9ECFE400BAF26D /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E7545E791F9ED2C900BAF26D /* Promocion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promocion.swift; sourceTree = "<group>"; };
+		E7545E7B1F9EED3700BAF26D /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +68,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD30EAF9211AD11B97D2DD60 /* Pods_ExamenPagaTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18D3D843603E545AFD1A3050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDFFA414E0ABD63F5452B3CF /* Pods_ExamenPagaTodo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A92FE8479D0F3B1A769D38D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2F92986BECE87AAD18DA9BB /* Pods-ExamenPagaTodo.debug.xcconfig */,
+				CC4F9BFF89F856649DB3EE7D /* Pods-ExamenPagaTodo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E72115FD1F9AC81400F3D645 = {
 			isa = PBXGroup;
 			children = (
 				E72116081F9AC81400F3D645 /* ExamenPagaTodo */,
 				E72116071F9AC81400F3D645 /* Products */,
+				A92FE8479D0F3B1A769D38D3 /* Pods */,
+				18D3D843603E545AFD1A3050 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +113,87 @@
 		E72116081F9AC81400F3D645 /* ExamenPagaTodo */ = {
 			isa = PBXGroup;
 			children = (
+				E7545E721F9EC2A400BAF26D /* controller */,
+				E7545E6D1F9EBF0600BAF26D /* headerView */,
+				E7545E681F9EA69900BAF26D /* Model */,
+				E7545E671F9EA68500BAF26D /* Logic */,
+				E72116271F9ACC7B00F3D645 /* Utils */,
+				E721161F1F9ACB7500F3D645 /* Font */,
+				E721161B1F9AC83200F3D645 /* Designables */,
 				E72116091F9AC81400F3D645 /* AppDelegate.swift */,
-				E721160B1F9AC81400F3D645 /* ViewController.swift */,
 				E721160D1F9AC81400F3D645 /* Main.storyboard */,
 				E72116101F9AC81400F3D645 /* Assets.xcassets */,
 				E72116121F9AC81400F3D645 /* LaunchScreen.storyboard */,
 				E72116151F9AC81400F3D645 /* Info.plist */,
 			);
 			path = ExamenPagaTodo;
+			sourceTree = "<group>";
+		};
+		E721161B1F9AC83200F3D645 /* Designables */ = {
+			isa = PBXGroup;
+			children = (
+				E721161D1F9AC84E00F3D645 /* CapitalButon.swift */,
+				E721161C1F9AC84E00F3D645 /* CapitalLabel.swift */,
+				E721161E1F9AC84E00F3D645 /* CapitalTextField.swift */,
+			);
+			path = Designables;
+			sourceTree = "<group>";
+		};
+		E721161F1F9ACB7500F3D645 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E72116201F9ACB8900F3D645 /* Roboto-Bold.ttf */,
+				E72116211F9ACB8900F3D645 /* Roboto-Light.ttf */,
+				E72116221F9ACB8900F3D645 /* Roboto-Medium.ttf */,
+				E72116231F9ACB8900F3D645 /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E72116271F9ACC7B00F3D645 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E72116251F9ACC6C00F3D645 /* Const.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E7545E671F9EA68500BAF26D /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E7545E691F9EA6C400BAF26D /* CapitalRequestManager.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		E7545E681F9EA69900BAF26D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E7545E6B1F9EAC1200BAF26D /* CHSesion.swift */,
+				E7545E791F9ED2C900BAF26D /* Promocion.swift */,
+				E7545E7B1F9EED3700BAF26D /* Artwork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7545E6D1F9EBF0600BAF26D /* headerView */ = {
+			isa = PBXGroup;
+			children = (
+				E7545E6E1F9EBF4200BAF26D /* HeaderView.xib */,
+			);
+			path = headerView;
+			sourceTree = "<group>";
+		};
+		E7545E721F9EC2A400BAF26D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E721160B1F9AC81400F3D645 /* LoginViewController.swift */,
+				E7545E701F9EC26B00BAF26D /* CollectionViewController.swift */,
+				E7545E731F9ECBE500BAF26D /* MapaViewController.swift */,
+				E7545E751F9ECC4700BAF26D /* DetailViewController.swift */,
+				E7545E771F9ECFE400BAF26D /* CollectionViewCell.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +203,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E72116181F9AC81400F3D645 /* Build configuration list for PBXNativeTarget "ExamenPagaTodo" */;
 			buildPhases = (
+				BA1513E90F1C22A0BEA0F8FB /* [CP] Check Pods Manifest.lock */,
 				E72116021F9AC81400F3D645 /* Sources */,
 				E72116031F9AC81400F3D645 /* Frameworks */,
 				E72116041F9AC81400F3D645 /* Resources */,
+				F014A159422E100573F38592 /* [CP] Embed Pods Frameworks */,
+				61B40F02CC453F1EEA6C3A36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,21 +258,101 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E72116281F9ACD2C00F3D645 /* Info.plist in Resources */,
 				E72116141F9AC81400F3D645 /* LaunchScreen.storyboard in Resources */,
+				E721162D1F9ACD6B00F3D645 /* Roboto-Medium.ttf in Resources */,
+				E721162C1F9ACD6800F3D645 /* Roboto-Regular.ttf in Resources */,
+				E721162E1F9ACD6E00F3D645 /* Roboto-Light.ttf in Resources */,
 				E72116111F9AC81400F3D645 /* Assets.xcassets in Resources */,
+				E7545E6F1F9EBF4200BAF26D /* HeaderView.xib in Resources */,
+				E721162F1F9ACD7100F3D645 /* Roboto-Bold.ttf in Resources */,
 				E721160F1F9AC81400F3D645 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61B40F02CC453F1EEA6C3A36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExamenPagaTodo/Pods-ExamenPagaTodo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA1513E90F1C22A0BEA0F8FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExamenPagaTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F014A159422E100573F38592 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExamenPagaTodo/Pods-ExamenPagaTodo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExamenPagaTodo/Pods-ExamenPagaTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E72116021F9AC81400F3D645 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E721160C1F9AC81400F3D645 /* ViewController.swift in Sources */,
+				E7545E761F9ECC4700BAF26D /* DetailViewController.swift in Sources */,
+				E7545E711F9EC26B00BAF26D /* CollectionViewController.swift in Sources */,
+				E7545E7C1F9EED3700BAF26D /* Artwork.swift in Sources */,
+				E7545E781F9ECFE400BAF26D /* CollectionViewCell.swift in Sources */,
+				E721162A1F9ACD3600F3D645 /* CapitalLabel.swift in Sources */,
+				E721160C1F9AC81400F3D645 /* LoginViewController.swift in Sources */,
+				E721162B1F9ACD3900F3D645 /* CapitalTextField.swift in Sources */,
 				E721160A1F9AC81400F3D645 /* AppDelegate.swift in Sources */,
+				E7545E6A1F9EA6C400BAF26D /* CapitalRequestManager.swift in Sources */,
+				E7545E6C1F9EAC1200BAF26D /* CHSesion.swift in Sources */,
+				E7545E741F9ECBE500BAF26D /* MapaViewController.swift in Sources */,
+				E7545E7A1F9ED2C900BAF26D /* Promocion.swift in Sources */,
+				E72116261F9ACC6C00F3D645 /* Const.swift in Sources */,
+				E72116291F9ACD3200F3D645 /* CapitalButon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +487,11 @@
 		};
 		E72116191F9AC81400F3D645 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2F92986BECE87AAD18DA9BB /* Pods-ExamenPagaTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZYCNWFQY2;
 				INFOPLIST_FILE = ExamenPagaTodo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.procesar.ExamenPagaTodo;
@@ -286,9 +503,11 @@
 		};
 		E721161A1F9AC81400F3D645 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC4F9BFF89F856649DB3EE7D /* Pods-ExamenPagaTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MZYCNWFQY2;
 				INFOPLIST_FILE = ExamenPagaTodo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.procesar.ExamenPagaTodo;
